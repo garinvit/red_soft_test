@@ -58,6 +58,6 @@ urlpatterns += [
     path('api/registration', RegisterView.as_view({'post': 'create'})),
     path('api/login/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
     path('api/token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
-    path('api/logout',TokenBlacklistView.as_view(), name='token_blacklist'),
+    path('api/logout', TokenBlacklistView.as_view(), name='token_blacklist'),
     path('api/', include(router.urls)),
 ]

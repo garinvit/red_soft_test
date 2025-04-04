@@ -50,4 +50,3 @@ class UserAdmin(UserAdmin):
         "user_permissions",
     )
     inlines = (UserInlineAdmin,)
-
